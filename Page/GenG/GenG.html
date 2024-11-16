@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title>GenG - Valorant Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Styles CSS supplémentaires -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            color: white;
+            background-color: #300000; /* Rouge très foncé */
+            font-family: Verdana;
+        }
+
+        .banner {
+            background-color: #800000; /* Rouge foncé pour la bannière */
+            font-family: 'Times New Roman', serif;
+            color: white !important; /* Force le texte à être en blanc */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Assure que les liens dans la bannière sont en blanc */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important; /* Change la couleur au survol si nécessaire (par exemple, gris clair) */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .text {
+            font-size: 1.2em;
+            z-index: 2; /* S'assure que le texte est au-dessus de l'overlay */
+        }
+
+        #valorant {
+            width: 100%; /* S'assure que l'image s'adapte à la largeur de l'écran */
+            height: auto; /* Permet de conserver les proportions de l'image */
+            filter: brightness(35%); /* Assombrit l'image */
+        }
+
+        .text_valo {
+            font-family: Verdana;
+            font-size: 23px;
+        }
+
+       table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Bannière rouge foncé -->
+        <div class="banner container-fluid">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">E-Sport Valorant</a>
+                </li>
+            </ul>
+
+            <!-- Onglets avec menus déroulants alignés à droite -->
+            <ul class="navbar-nav ms-auto">
+                <!-- Team Heretics -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Team_Heretics/Team_Heretics.html" id="teamHeretics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Heretics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="teamHeretics">
+                        <li><a class="dropdown-item" href="../Team_Heretics/BOO.html">BOO</a></li>
+                        <li><a class="dropdown-item" href="../Team_Heretics/benjyfishy.html">benjyfishy</a></li>
+                        <li><a class="dropdown-item" href="../Team_Heretics/ReiNs.html">RieNs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sentinels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Sentinels/Sentinels.html" id="sentinels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sentinels
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sentinels">
+                        <li><a class="dropdown-item" href="../Sentinels/TenZ.html">TenZ</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/JohnQT.html">JohnQT</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/zekken.html">zekken</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gen.G -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/GenG/GenG.html" id="geng" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gen.G
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="geng">
+                        <li><a class="dropdown-item" href="t3xture.html">t3xture</a></li>
+                        <li><a class="dropdown-item" href="Karon.html">Karon</a></li>
+                        <li><a class="dropdown-item" href="huynh.html">huynh</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container mt-3">
+        <img id='valorant' src='../Image/wp7282568-valorant-logo-wallpapers.png' alt="Valorant Image">
+        <div class="overlay">
+            <div class="text text_valo">
+
+    <section>
+            <h1>Gen.G : Une Équipe Montante sur la Scène Compétitive de Valorant</h1>
+
+    <p><strong>Gen.G</strong> est une organisation d'e-sport internationale reconnue, fondée en 2017 et basée à Los Angeles, avec des racines en Corée du Sud et des équipes actives dans plusieurs jeux compétitifs.<br /> Depuis son arrivée sur la scène de <em>Valorant</em>, Gen.G s'est rapidement fait un nom grâce à sa stratégie bien pensée et au talent de ses joueurs, visant constamment l'excellence dans les compétitions régionales et internationales du <strong>Valorant Champions Tour</strong> (VCT).</p>
+
+    <p>L’équipe de Gen.G est composée de joueurs talentueux tels que <strong>t3xture</strong>, <strong>Karon</strong>, et <strong>huynh</strong>, qui incarnent les valeurs de l'organisation : détermination, adaptabilité et esprit d’équipe.<br /> Chaque joueur apporte une expertise unique qui enrichit les stratégies globales de l'équipe. <strong>t3xture</strong>, dueliste explosif, se démarque par sa capacité à initier les engagements et à prendre des décisions rapides, souvent décisives dans les moments critiques. <strong>Karon</strong>, quant à lui, est le pilier défensif de l’équipe ; en tant que contrôleur, il excelle à maîtriser le terrain et à soutenir son équipe dans les moments difficiles. Enfin, <strong>huynh</strong>, avec son rôle d'initiateur, est un joueur expérimenté qui prépare le terrain pour ses coéquipiers, créant des ouvertures stratégiques essentielles.</p>
+
+    <p>Gen.G se distingue non seulement par ses performances en jeu, mais aussi par son approche professionnelle de l’e-sport. En mettant l'accent sur la formation, l'analyse des performances et le bien-être de ses joueurs, l’organisation veille à offrir un environnement où chacun peut atteindre son potentiel maximum.<br /> Avec des objectifs ambitieux dans le <em>Valorant Champions Tour</em> et un désir constant de s'améliorer, Gen.G s’affirme de plus en plus comme une équipe redoutable et aspirant à être parmi les meilleures au monde.</p>
+
+    <p>L'avenir de Gen.G sur la scène <em>Valorant</em> s'annonce prometteur, et leur parcours continue d’inspirer leurs fans et de captiver l’attention de la communauté e-sportive.</p>
+
+    </section>
+    </footer>
+          
+        <table>
+        <tr>
+            <th>Nom</th>
+            <th>Pseudo</th>
+            <th>Rôle</th>
+            <th>Nationalité</th>
+            <th>Équipe Actuelle</th>
+            <th>Années Actives</th>
+            <th>Performances Notables</th>
+        </tr>
+        <tr>
+            <td>Yu Min-soo</td>
+            <td>t3xture</td>
+            <td>Dueliste</td>
+            <td>Sud-Coréen</td>
+            <td>Gen.G</td>
+            <td>2020 - présent</td>
+            <td>Compétitions régionales VCT, impressionnant par ses compétences d’attaque</td>
+        </tr>
+        <tr>
+            <td>Park Jong-pil</td>
+            <td>Karon</td>
+            <td>Contrôleur</td>
+            <td>Sud-Coréen</td>
+            <td>Gen.G</td>
+            <td>2021 - présent</td>
+            <td>Joueur clé pour les stratégies défensives de Gen.G</td>
+        </tr>
+        <tr>
+            <td>Kenneth "huynh" Huynh</td>
+            <td>huynh</td>
+            <td>Initiateur</td>
+            <td>Américain</td>
+            <td>Gen.G</td>
+            <td>2019 - présent</td>
+            <td>Ancien joueur pour Dignitas, joueur expérimenté en compétition</td>
+        </tr>
+    </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

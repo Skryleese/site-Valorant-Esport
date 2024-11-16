@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title>benjyfishy - Valorant Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Styles CSS supplémentaires -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            color: white;
+            background-color: #300000; /* Rouge très foncé */
+            font-family: Verdana;
+        }
+
+        .banner {
+            background-color: #800000; /* Rouge foncé pour la bannière */
+            font-family: 'Times New Roman', serif;
+            color: white !important; /* Force le texte à être en blanc */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Assure que les liens dans la bannière sont en blanc */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important; /* Change la couleur au survol si nécessaire (par exemple, gris clair) */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .text {
+            font-size: 1.2em;
+            z-index: 2; /* S'assure que le texte est au-dessus de l'overlay */
+        }
+
+        #valorant {
+            width: 100%; /* S'assure que l'image s'adapte à la largeur de l'écran */
+            height: auto; /* Permet de conserver les proportions de l'image */
+            filter: brightness(35%); /* Assombrit l'image */
+        }
+
+        .text_valo {
+            font-family: Verdana;
+            font-size: 23px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+         #info {
+            background-color: #710000;
+            color: #f3d3d3
+        }
+    
+        /* Ajoute le menu déroulant au survol pour benjyfishy.html */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Ajuste le positionnement */
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Bannière rouge foncé -->
+        <div class="banner container-fluid">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../index.html">E-Sport Valorant</a>
+                </li>
+            </ul>
+
+            <!-- Onglets avec menus déroulants alignés à droite -->
+            <ul class="navbar-nav ms-auto">
+                <!-- Team Heretics -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Team_Heretics/Team_Heretics.html" id="teamHeretics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Heretics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="teamHeretics">
+                        <li><a class="dropdown-item" href="BOO.html">BOO</a></li>
+                        <li><a class="dropdown-item" href="benjyfishy.html">benjyfishy</a></li>
+                        <li><a class="dropdown-item" href="ReiNs.html">RieNs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sentinels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Sentinels/Sentinels.html" id="sentinels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sentinels
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sentinels">
+                        <li><a class="dropdown-item" href="../Sentinels/TenZ.html">TenZ</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/JohnQT.html">JohnQT</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/zekken.html">zekken</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gen.G -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/GenG/GenG.html" id="geng" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gen.G
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="geng">
+                        <li><a class="dropdown-item" href="../GenG/t3xture.html">t3xture</a></li>
+                        <li><a class="dropdown-item" href="../GenG/Karon.html">Karon</a></li>
+                        <li><a class="dropdown-item" href="../GenG/huynh.html">huynh</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container mt-3">
+        <img id='valorant' src='../Image/wp7282568-valorant-logo-wallpapers.png' alt="Valorant Image">
+        <div class="overlay">
+            <div class="text text_valo">
+                <h1> benjyfishy </h1>
+                <p>Benjyfishy, de son vrai nom Benjy David Fish, est un joueur professionnel britannique qui a d'abord fait ses preuves dans Fortnite, où il s'est rapidement imposé comme l'un des meilleurs joueurs du monde. <br />Depuis ses débuts en 2019, il a accumulé de nombreux titres et a été salué pour sa mécanique exceptionnelle et sa capacité à rivaliser avec les plus grands noms de l'e-sport.</p>
+
+                <p>Bien que Benjyfishy soit principalement connu pour ses exploits dans Fortnite, il a également exploré d'autres titres compétitifs, y compris Valorant.<br />Sa polyvalence en fait un joueur respecté dans la communauté e-sportive, et il continue de participer à divers tournois tout en développant ses compétences dans plusieurs jeux.<br />Avec un public fidèle et une passion pour la compétition, Benjyfishy reste un nom à suivre dans l'univers de l'e-sport.</p>
+
+            <table>
+                <tr>
+                    <th colspan = '4' id='info'>Informartions sur benjyfishy</th>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <td>Benjy David Fish</td>
+                    <td rowspan='7'><img src='../Image/benjyfishy.jpg'></td>
+                </tr>
+                 <tr>
+                    <th>Pseudo</th>
+                    <td>Benjyfishy</td>
+                </tr>
+                <tr>
+                    <th>Rôle</th>
+                    <td>Joueur polyvalent (flex)</td>
+                </tr>
+                 <tr>
+                    <th>Nationalité</th>
+                    <td>Britannique</td>
+                </tr>
+                 <tr>
+                    <th>Equipe Actuelle</th>
+                    <td>Team Heretics</td>
+                </tr>
+                <tr>
+                    <th>Années d'activité</th>
+                    <td>2019 - présent</td>
+                </tr>
+                <tr>
+                    <th>Performances Notables</th>
+                    <td>Champion du Fortnite Champion Series, Participation aux tournois de Valorant</td>
+                </tr>
+            </table>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

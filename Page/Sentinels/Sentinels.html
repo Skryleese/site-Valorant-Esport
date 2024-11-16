@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title>Sentinels - Valorant Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Styles CSS supplémentaires -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            color: white;
+            background-color: #300000; /* Rouge très foncé */
+            font-family: Verdana;
+        }
+
+        .banner {
+            background-color: #800000; /* Rouge foncé pour la bannière */
+            font-family: 'Times New Roman', serif;
+            color: white !important; /* Force le texte à être en blanc */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Assure que les liens dans la bannière sont en blanc */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important; /* Change la couleur au survol si nécessaire (par exemple, gris clair) */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .text {
+            font-size: 1.2em;
+            z-index: 2; /* S'assure que le texte est au-dessus de l'overlay */
+        }
+
+        #valorant {
+            width: 100%; /* S'assure que l'image s'adapte à la largeur de l'écran */
+            height: auto; /* Permet de conserver les proportions de l'image */
+            filter: brightness(35%); /* Assombrit l'image */
+        }
+
+        .text_valo {
+            font-family: Verdana;
+            font-size: 23px;
+        }
+
+       table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Bannière rouge foncé -->
+        <div class="banner container-fluid">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">E-Sport Valorant</a>
+                </li>
+            </ul>
+
+            <!-- Onglets avec menus déroulants alignés à droite -->
+            <ul class="navbar-nav ms-auto">
+                <!-- Team Heretics -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Team_Heretics/Team_Heretics.html" id="teamHeretics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Heretics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="teamHeretics">
+                        <li><a class="dropdown-item" href="../Team_Heretics/BOO.html">BOO</a></li>
+                        <li><a class="dropdown-item" href="../Team_Heretics/benjyfishy.html">benjyfishy</a></li>
+                        <li><a class="dropdown-item" href="../Team_Heretics/ReiNs.html">RieNs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sentinels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Sentinels/Sentinels.html" id="sentinels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sentinels
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sentinels">
+                        <li><a class="dropdown-item" href="TenZ.html">TenZ</a></li>
+                        <li><a class="dropdown-item" href="JohnQT.html">JohnQT</a></li>
+                        <li><a class="dropdown-item" href="zekken.html">zekken</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gen.G -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/GenG/GenG.html" id="geng" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gen.G
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="geng">
+                        <li><a class="dropdown-item" href="../GenG/t3xture.html">t3xture</a></li>
+                        <li><a class="dropdown-item" href="../GenG/Karon.html">Karon</a></li>
+                        <li><a class="dropdown-item" href="../GenG/huynh.html">huynh</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container mt-3">
+        <img id='valorant' src='../Image/wp7282568-valorant-logo-wallpapers.png' alt="Valorant Image">
+        <div class="overlay">
+            <div class="text text_valo">
+
+    <section>
+          <h1>Sentinels : Une Équipe Iconique dans l’Univers de Valorant</h1>
+
+		  <p><strong>Sentinels</strong> est une organisation nord-américaine d’e-sport fondée en 2016 et basée à Los Angeles. Connue pour son approche innovante et son recrutement de joueurs talentueux, l’équipe s’est rapidement imposée comme l’une des plus compétitives et populaires sur la scène de <em>Valorant</em>.<br /> Sentinels a acquis une reconnaissance mondiale en 2021 grâce à son succès retentissant aux <strong>Masters Reykjavik</strong>, où l’équipe a remporté le premier tournoi international de Valorant, devenant ainsi championne et marquant l’histoire de l’e-sport.</p>
+
+          <p>Composée de joueurs talentueux tels que <strong>TenZ</strong>, <strong>Zekken</strong>, <strong>SicK</strong>, et <strong>pANcada</strong>, l’équipe Sentinels est réputée pour son style de jeu audacieux et son agilité tactique.<br /> Leur joueur vedette, TenZ, a largement contribué à la renommée de l’équipe avec son style de jeu explosif et son influence dans la communauté.<br/> Avec des rôles variés, allant de duelistes à initiateurs, Sentinels maîtrise une large gamme de stratégies, ce qui leur permet de surprendre et de dominer leurs adversaires.</p>
+
+		  <p>Les Sentinels se distinguent par leur adaptabilité et leur capacité à rester performants dans les moments critiques, ce qui les a rendus extrêmement populaires auprès des fans de Valorant. Au-delà de leurs performances en compétition, Sentinels s'efforce également d’innover en matière de contenu et d’engagement avec leur communauté, renforçant ainsi leur influence et leur popularité sur les réseaux sociaux.</p>
+
+		  <p>Avec des performances constantes dans les tournois de Valorant Champions Tour (<strong>VCT</strong>), l’équipe Sentinels continue d’être une force majeure dans l’e-sport et de viser de nouveaux sommets, tout en inspirant les futurs talents de la scène compétitive.</p>
+    </section>
+    </footer>
+          
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Pseudo</th>
+            <th>Rôle</th>
+            <th>Nationalité</th>
+            <th>Équipe Actuelle</th>
+            <th>Années Actives</th>
+            <th>Performances Notables</th>
+        </tr>
+        <tr>
+            <td>Tyson Ngo</td>
+            <td>TenZ</td>
+            <td>Dueliste</td>
+            <td>Canadien</td>
+            <td>Sentinels</td>
+            <td>2019 - présent</td>
+            <td>Champion des Masters Reykjavik 2021, Participation aux VCT</td>
+        </tr>
+        <tr>
+            <td>John "JohnQT" Qin</td>
+            <td>JohnQT</td>
+            <td>Initiateur</td>
+            <td>Américain</td>
+            <td>Sentinels</td>
+            <td>2020 - présent</td>
+            <td>Participation aux tournois VCT, réputation d'initié stratégique</td>
+        </tr>
+        <tr>
+            <td>Zachary "zekken" Patrone</td>
+            <td>Zekken</td>
+            <td>Flex (Polyvalent)</td>
+            <td>Américain</td>
+            <td>Sentinels</td>
+            <td>2021 - présent</td>
+            <td>Performances aux VCT avec XSET et Sentinels, flexibilité sur différents agents</td>
+        </tr>
+    </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

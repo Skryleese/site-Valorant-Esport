@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title>BOO - Valorant Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Styles CSS supplémentaires -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            color: white;
+            background-color: #300000; /* Rouge très foncé */
+            font-family: Verdana;
+        }
+
+        .banner {
+            background-color: #800000; /* Rouge foncé pour la bannière */
+            font-family: 'Times New Roman', serif;
+            color: white !important; /* Force le texte à être en blanc */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Assure que les liens dans la bannière sont en blanc */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important; /* Change la couleur au survol si nécessaire (par exemple, gris clair) */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .text {
+            font-size: 1.2em;
+            z-index: 2; /* S'assure que le texte est au-dessus de l'overlay */
+        }
+
+        #valorant {
+            width: 100%; /* S'assure que l'image s'adapte à la largeur de l'écran */
+            height: auto; /* Permet de conserver les proportions de l'image */
+            filter: brightness(35%); /* Assombrit l'image */
+        }
+
+        .text_valo {
+            font-family: Verdana;
+            font-size: 23px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        #info {
+            background-color: #710000;
+            color: #f3d3d3
+        }
+    
+        /* Ajoute le menu déroulant au survol pour BOO.html */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Ajuste le positionnement */
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Bannière rouge foncé -->
+        <div class="banner container-fluid">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../index.html">E-Sport Valorant</a>
+                </li>
+            </ul>
+
+            <!-- Onglets avec menus déroulants alignés à droite -->
+            <ul class="navbar-nav ms-auto">
+                <!-- Team Heretics -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Team_Heretics/Team_Heretics.html" id="teamHeretics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Heretics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="teamHeretics">
+                        <li><a class="dropdown-item" href="BOO.html">BOO</a></li>
+                        <li><a class="dropdown-item" href="benjyfishy.html">benjyfishy</a></li>
+                        <li><a class="dropdown-item" href="ReiNs.html">RieNs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sentinels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Sentinels/Sentinels.html" id="sentinels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sentinels
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sentinels">
+                        <li><a class="dropdown-item" href="../Sentinels/TenZ.html">TenZ</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/JohnQT.html">JohnQT</a></li>
+                        <li><a class="dropdown-item" href="../Sentinels/zekken.html">zekken</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gen.G -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/GenG/GenG.html" id="geng" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gen.G
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="geng">
+                        <li><a class="dropdown-item" href="../GenG/t3xture.html">t3xture</a></li>
+                        <li><a class="dropdown-item" href="../GenG/Karon.html">Karon</a></li>
+                        <li><a class="dropdown-item" href="../GenG/huynh.html">huynh</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container mt-3">
+        <img id='valorant' src='../Image/wp7282568-valorant-logo-wallpapers.png' alt="Valorant Image">
+        <div class="overlay">
+            <div class="text text_valo">
+                <h1> BOO </h1>
+                <p>BOO, de son vrai nom Javier "BOO" Rodríguez, est un joueur professionnel espagnol de Valorant, connu pour son rôle de dueliste au sein de l'équipe Team Heretics.<br /> Depuis ses débuts dans l'e-sport en 2020, il s'est rapidement imposé comme l'un des talents prometteurs de la scène européenne.<br/> Avec un style de jeu agressif et une excellente mécanique, BOO est reconnu pour sa capacité à créer des opportunités décisives pour son équipe, en menant souvent des attaques audacieuses et en réalisant des éliminations clés.</p>
+
+                Sa performance la plus marquante a eu lieu lors du First Strike Europe 2020, où il a joué un rôle déterminant dans la victoire de son équipe.<br/> Avec un sens aigu du jeu et une compréhension stratégique, BOO continue d'évoluer et de s'adapter à la compétition intense du Valorant Champions Tour, aspirant à atteindre de nouveaux sommets dans sa carrière professionnelle.
+
+            <table>
+                <tr>
+                    <th colspan = '4' id='info'>Informartions sur BOO</th>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <td>Javier Boo Rodriguez</td>
+                    <td rowspan='7'><img src='../Image/BOO.jpg'></td>
+                </tr>
+                 <tr>
+                    <th>Pseudo</th>
+                    <td>BOO</td>
+                </tr>
+                <tr>
+                    <th>Rôle</th>
+                    <td>In-Game Leader(IGL)/Dueliste</td>
+                </tr>
+                 <tr>
+                    <th>Nationalité</th>
+                    <td>Espagnol</td>
+                </tr>
+                 <tr>
+                    <th>Equipe Actuelle</th>
+                    <td>Team Heretics</td>
+                </tr>
+                <tr>
+                    <th>Années d'activité</th>
+                    <td>2020 - présent</td>
+                </tr>
+                <tr>
+                    <th>Performances Notables</th>
+                    <td>Champion du First Strike Europe 2020, Participation aux VCT 2021 et 2022</td>
+                </tr>
+            </table>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

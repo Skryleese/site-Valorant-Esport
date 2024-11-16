@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title>Valorant Esport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Styles CSS supplémentaires -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            color: white;
+            background-color: #300000; /* Rouge très foncé */
+            font-family: Verdana;
+        }
+
+        .banner {
+            background-color: #800000; /* Rouge foncé pour la bannière */
+            font-family: 'Times New Roman', serif;
+            color: white !important; /* Force le texte à être en blanc */
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Assure que les liens dans la bannière sont en blanc */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important; /* Change la couleur au survol si nécessaire (par exemple, gris clair) */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li:hover {
+            background-color: #111;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .text {
+            font-size: 1.2em;
+            z-index: 2; /* S'assure que le texte est au-dessus de l'overlay */
+        }
+
+        #valorant {
+            width: 100%; /* S'assure que l'image s'adapte à la largeur de l'écran */
+            height: auto; /* Permet de conserver les proportions de l'image */
+            filter: brightness(35%); /* Assombrit l'image */
+        }
+
+        .text_valo {
+            font-family: Verdana;
+            font-size: 23px;
+        }
+    
+        /* Ajoute le menu déroulant au survol pour index.html */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Ajuste le positionnement */
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <!-- Bannière rouge foncé -->
+        <div class="banner container-fluid">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">E-Sport Valorant</a>
+                </li>
+            </ul>
+
+            <!-- Onglets avec menus déroulants alignés à droite -->
+            <ul class="navbar-nav ms-auto">
+                <!-- Team Heretics -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Team_Heretics/Team_Heretics.html" id="teamHeretics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Team Heretics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="teamHeretics">
+                        <li><a class="dropdown-item" href="Page/Team_Heretics/BOO.html">BOO</a></li>
+                        <li><a class="dropdown-item" href="Page/Team_Heretics/benjyfishy.html">benjyfishy</a></li>
+                        <li><a class="dropdown-item" href="Page/Team_Heretics/ReiNs.html">RieNs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Sentinels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/Sentinels/Sentinels.html" id="sentinels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sentinels
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sentinels">
+                        <li><a class="dropdown-item" href="Page/Sentinels/TenZ.html">TenZ</a></li>
+                        <li><a class="dropdown-item" href="Page/Sentinels/JohnQT.html">JohnQT</a></li>
+                        <li><a class="dropdown-item" href="Page/Sentinels/zekken.html">zekken</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gen.G -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Page/GenG/GenG.html" id="geng" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gen.G
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="geng">
+                        <li><a class="dropdown-item" href="Page/GenG/t3xture.html">t3xture</a></li>
+                        <li><a class="dropdown-item" href="Page/GenG/Karon.html">Karon</a></li>
+                        <li><a class="dropdown-item" href="Page/GenG/huynh.html">huynh</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container mt-3">
+        <img id='valorant' src='Page/Image/wp7282568-valorant-logo-wallpapers.png' alt="Valorant Image">
+        <div class="overlay">
+            <div class="text text_valo">
+                <p><strong>Valorant</strong> est un jeu de tir à la première personne tactique développé par <strong>Riot Games</strong>, sorti en 2020.</p>
+                <p>Ce jeu se distingue par son mélange unique entre les mécaniques de précision des FPS classiques et les compétences spéciales propres à chaque personnage, appelés les <strong>agents</strong>.</p>
+                <p>L'objectif principal est simple : deux équipes de cinq joueurs s'affrontent, l'une cherchant à poser une bombe (appelée <strong>Spike</strong>) tandis que l'autre essaie de défendre les sites où cela peut se produire.</p>
+                <p>Les parties se déroulent en plusieurs manches, et la victoire est accordée à l'équipe qui en remporte le plus.</p>
+                <p>Ce qui rend <strong>Valorant</strong> particulièrement stratégique, c'est la complémentarité des agents, chacun ayant des capacités spéciales qui peuvent renverser le cours d'un round.</p>
+                <p>Par exemple, certains agents peuvent poser des pièges, créer des écrans de fumée, ou même soigner leurs coéquipiers.</p>
+                <p>Ce mélange entre compétences et tir précis rend le jeu extrêmement tactique et demande une bonne communication d'équipe.</p>
+                <p>Le jeu met également l'accent sur l'économie, où les joueurs doivent gérer leurs ressources pour acheter des armes et des capacités à chaque manche.</p>
+                <p><strong>Valorant</strong> a connu un succès massif, notamment dans le monde de l'<strong>e-sport</strong>, grâce à son rythme rapide et ses mécaniques de jeu profondes.</p>
+                <p><strong>Riot Games</strong> continue de l'enrichir avec de nouveaux agents, des mises à jour de cartes, et des améliorations régulières pour garder la compétition intense et équilibrée.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
